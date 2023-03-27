@@ -19,15 +19,15 @@ const Shop = () => {
 
 
     return (
-        <div className='shop-container'>
+        <div className='grid grid-cols-1 md:grid-cols-[3fr_2fr] lg:grid-cols-[4fr_1fr] gap-3 p-5 '>
             
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 order-2 md:order-1 lg:order-1">
                     {
                         products.map(product => <Product product={product} key= {product.id} HandleAddToCard = {HandleAddToCard}></Product>)
                     }
                 </div>
             
-            <div className='card-container text-center font-bold text-lg my-3'>
+            <div className='card-container text-center font-bold text-lg my-3 mb-11 order-1 md:order-2 lg:order-2'>
                 <h1>Card summary</h1>
                 <p>Selected Items : {card.length}</p>
             </div>

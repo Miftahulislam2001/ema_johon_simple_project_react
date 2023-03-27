@@ -7,6 +7,7 @@
     background: #1C2B35;
     padding: 0px 50px;
 }
+
 .header div a{
     margin-left: 30px;
     font-weight: 400;
@@ -15,3 +16,27 @@
 .header div a:hover{
     color: orangered;
 }
+
+@media (max-width: 800px) {
+    .header {
+        height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+    .header div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .header div a{
+        margin: 5px;
+        background-color: #35617e;
+        width: 200px;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .header div a:hover{
+        background-color: #0c3a58;
+    }
+  }
